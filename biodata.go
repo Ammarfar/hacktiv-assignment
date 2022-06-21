@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func biodata() {
 	input, _ := strconv.Atoi(os.Args[1])
 	user := helpers.GenerateUser(5)
 
