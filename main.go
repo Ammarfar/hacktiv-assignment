@@ -14,8 +14,8 @@ import (
 
 func main() {
 
-	// Assignment 1
-	Biodata()
+	// Assignment 1 - running main.go with param
+	// Biodata()
 
 	r := gin.Default()
 
