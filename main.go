@@ -34,6 +34,10 @@ func main() {
 	r.PUT("/orders/:orderId", controllers.UpdateOrder)
 	r.DELETE("/orders/:orderId", controllers.DeleteOrder)
 
+	// Assignment 3
+	r.LoadHTMLGlob("views/*")
+	r.GET("/weather", controllers.IndexWeather)
+
 	host := helpers.GetEnv("APP_HOST")
 	port := helpers.GetEnv("APP_PORT")
 	r.Run(host + ":" + port)
